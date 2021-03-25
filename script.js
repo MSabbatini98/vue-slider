@@ -27,7 +27,8 @@ var vue_box = new Vue (
                 "cascata naturale",
                 "polpo che si nasconde all'interno di una conchiglia"
             ],
-            img_index: 0
+            img_index: 0,
+            keyCode: ''
         },
         methods : {
             
@@ -45,7 +46,24 @@ var vue_box = new Vue (
                 if (this.img_index < 0) {
                     this.img_index = this.images.length - 1;
                 }
+            },
+
+            moveWithArrows : function (e) {
+                if (e.keyCode == 39) {
+                    console.log("I'm next");
+                    // this.nextImg;
+                    // e.nextImg
+                    // nextImg
+                    this.nextImg();
+                } else if (e.keyCode == 37) {
+                    console.log("I'm prev");
+                    this.prevImg();
+                }
             }
         }
     }
 )
+
+window.addEventListener('keydown', function(e) {
+    vue_box.moveWithArrows(e)
+});

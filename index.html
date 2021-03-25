@@ -36,7 +36,9 @@
                     <img :src="images[img_index]" alt="alt[alt_index]">
                     <!-- indice con i pallini del carousel -->
                     <div class="carousel_index">
-                        
+                        <i  class="fa fas-circle" v-for = "(image, index) in images" 
+                            :class="img_index == index ? 'active' : '' "
+                            @click ="img_index = index"></i>
                     </div>
                 </div>
                 <!-- freccia avanti -->

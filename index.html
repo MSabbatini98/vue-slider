@@ -22,28 +22,28 @@
 
 </head>
 <body>
+    <!-- prova per "animare" il cursore -->
     <!-- zona di interazione con VUE -->
     <div id="vue_box">
-        <h1>Carousel con Vue.JS</h1> 
+
         <div class="carousel_box">
             <div class="carousel">
+                <h1>Carousel con Vue.JS</h1> 
                 <!-- freccia indietro -->
                 <div class="carousel_prev">
                     <i @click="prevImg" class="fas fa-chevron-left"></i>
                 </div>
                 <!-- immagini del carousel -->
                 <div class="carousel_main">
-                    <img :src="images[img_index]" alt="alt[alt_index]">
-                    <!-- indice con i pallini del carousel -->
-                    <div class="carousel_index">
-                        <i  class="fa fas-circle" v-for = "(image, index) in images" 
-                            :class="img_index == index ? 'active' : '' "
-                            @click ="img_index = index"></i>
-                    </div>
+                    <img :src="images[img_index]" :alt="alt[img_index]">
                 </div>
                 <!-- freccia avanti -->
                 <div class="carousel_next">
                     <i @click="nextImg" class="fas fa-chevron-right"></i>
+                </div>
+                <!-- indice con i pallini del carousel -->
+                <div class="carousel_index">
+                    <i  class="fa fa-circle" v-for = "(image, index) in images" :class="img_index == index ? 'active' : '' " @click ="img_index = index"></i>
                 </div>
             </div>
         </div>

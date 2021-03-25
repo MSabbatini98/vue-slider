@@ -1,1 +1,3 @@
-alert("Hello");
+var vue_box = new Vue (
+    { }
+)

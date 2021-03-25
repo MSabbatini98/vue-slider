@@ -9,32 +9,39 @@
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
     <!-- File css -->    
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Vue.JS CDN : development version -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
 </head>
 <body>
-    <h1>Carousel con Vue.JS</h1> 
     <!-- zona di interazione con VUE -->
-    <div class="vue_box">
+    <div id="vue_box">
+        <h1>Carousel con Vue.JS</h1> 
         <div class="carousel_box">
             <div class="carousel">
+                <!-- freccia indietro -->
                 <div class="carousel_prev">
-    
+                    <i @click="prevImg" class="fas fa-chevron-left"></i>
                 </div>
+                <!-- immagini del carousel -->
                 <div class="carousel_main">
-    
+                    <img :src="images[img_index]" alt="alt[alt_index]">
+                    <!-- indice con i pallini del carousel -->
+                    <div class="carousel_index">
+                        
+                    </div>
                 </div>
+                <!-- freccia avanti -->
                 <div class="carousel_next">
-    
+                    <i @click="nextImg" class="fas fa-chevron-right"></i>
                 </div>
             </div>
         </div>
@@ -43,6 +50,6 @@
 
     <!-- File JavaScript da mettere a fine HTML-->
     <script src="script.js" charset="utf-8"></script> 
-    
+
 </body>
 </html>

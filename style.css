@@ -1,3 +1,40 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
 body {
     background-color: blue;
+    font-family: 'New Tegomin', serif;
+}
+h1{
+    text-align: center;
+}
+.carousel_box{
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+    background-color: cornflowerblue;
+    margin: auto;
+        border: crimson 3px solid;
+}
+
+.carousel_main img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel i {
+    font-size: 50px;
+    cursor: pointer;
 }

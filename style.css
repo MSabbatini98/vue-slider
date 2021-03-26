@@ -7,6 +7,8 @@
 body {
     background-color: black;
     font-family: 'New Tegomin', serif;
+    width: 1400px;
+    margin: auto;
 }
 .carousel_box{
     height: 100vh;
@@ -85,67 +87,6 @@ body {
     margin: auto;
 } */
 
-.glitch {
-    font-size: 65px;
-    font-weight: bold;
-    position: relative;
-  
-    text-shadow: 0.05em 0 0 rgba(255, 255, 255, 0.75),
-      -0.025em -0.05em 0 rgba(19, 15, 146, 0.75),
-      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-  
-    animation: glitch 5000ms infinite;
-  }
-  
-  .glitch span {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .glitch span:first-child {
-    animation: glitch 6500ms infinite;
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-    transform: translate(-0.025em, -0.0125em);
-    /* color: green; */
-    opacity: 0.8;
-  }
-  
-  .glitch span:last-child {
-    animation: glitch 3750ms infinite;
-    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
-    transform: translate(0.0125em, 0.025em);
-    /* color: red; */
-    opacity: 0.8;
-  }
-  
-  /* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
-  
-  @keyframes glitch {
-    0% {
-      text-shadow: 0.05em 0 0 rgba(255, 255, 255, 0.75),
-        -0.05em -0.025em 0 rgba(19, 15, 146, 0.75),
-        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-    }
- 
-    15% {
-      text-shadow: -0.05em -0.025em 0 rgba(255, 255, 255, 0.75),
-        0.025em 0.025em 0 rgba(19, 15, 146, 0.75),
-        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
-    }
-
-    50% {
-      text-shadow: 0.025em 0.05em 0 rgba(255, 255, 255, 0.75),
-        0.05em 0 0 rgba(19, 15, 146, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
-    }
-
-    100% {
-      text-shadow: -0.025em 0 0 rgba(255, 255, 255, 0.75),
-        -0.025em -0.025em 0 rgba(19, 15, 146, 0.75),
-        -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
-    }
-  }
-
   .h1 {
       position: relative;
   }
@@ -153,11 +94,11 @@ body {
     font-size: 65px;
     font-weight: bold;
     position: absolute;
+    transform: translate(200%, -444%);
     text-shadow: 0.05em 0 0 rgba(255, 255, 255, 0.75),
       -0.025em -0.05em 0 rgba(19, 15, 146, 0.75),
       0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-    top: -360px;
-    right: -900px;
+
     animation: glitch 5000ms infinite;
   }
   
@@ -222,4 +163,3 @@ body {
       transition-delay: 0s !important;
     }
   }
-  

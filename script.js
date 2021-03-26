@@ -1,3 +1,23 @@
+var yourResolution = getResolution();
+
+alert("I SAID PLEASE");
+
+// console.log(screen.width);
+// let count = 0;
+// while (screen.width < 1400) {
+//     setTimeout(getResolution, 1000);
+//     console.log(screen.width, count);
+//     count ++;
+// }
+
+// console.log(screen.width, count);
+
+
+function getResolution() {
+    alert ("Questa pagina NON è responsive, ci scusiamo per il disagio")
+    alert("Your screen resolution is: " + screen.width + "x" + screen.height + "px \nPlease make it exactly 1600x850px");
+}
+
 var vue_box = new Vue (
     {
         el : "#vue_box",

@@ -55,6 +55,7 @@ var vue_box = new Vue (
                     // e.nextImg
                     // nextImg
                     this.nextImg();
+                    
                 } else if (e.keyCode == 37) {
                     console.log("I'm prev");
                     this.prevImg();

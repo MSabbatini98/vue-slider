@@ -8,23 +8,6 @@ body {
     background-color: black;
     font-family: 'New Tegomin', serif;
 }
-/* ********* TITOLO */
-#vue_box h1{
-    text-align: center;
-    color: white;
-    font-weight: bolder;
-    font-size: 65px;
-    position: absolute;
-    top: -65px;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-#vue_box h1:hover{
-    color: blue;
-}
-
-
 .carousel_box{
     height: 100vh;
     display: flex;
@@ -88,3 +71,155 @@ body {
     font-size: 40px !important;
 
 }
+
+/* ********* TITOLO */
+/* #vue_box h1{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 65px;
+    position: absolute;
+    top: -65px;
+    left: 0;
+    right: 0;
+    margin: auto;
+} */
+
+.glitch {
+    font-size: 65px;
+    font-weight: bold;
+    position: relative;
+  
+    text-shadow: 0.05em 0 0 rgba(255, 255, 255, 0.75),
+      -0.025em -0.05em 0 rgba(19, 15, 146, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  
+    animation: glitch 5000ms infinite;
+  }
+  
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .glitch span:first-child {
+    animation: glitch 6500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-0.025em, -0.0125em);
+    /* color: green; */
+    opacity: 0.8;
+  }
+  
+  .glitch span:last-child {
+    animation: glitch 3750ms infinite;
+    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+    transform: translate(0.0125em, 0.025em);
+    /* color: red; */
+    opacity: 0.8;
+  }
+  
+  /* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 rgba(255, 255, 255, 0.75),
+        -0.05em -0.025em 0 rgba(19, 15, 146, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+ 
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 255, 255, 0.75),
+        0.025em 0.025em 0 rgba(19, 15, 146, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 255, 255, 0.75),
+        0.05em 0 0 rgba(19, 15, 146, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    100% {
+      text-shadow: -0.025em 0 0 rgba(255, 255, 255, 0.75),
+        -0.025em -0.025em 0 rgba(19, 15, 146, 0.75),
+        -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+  }
+
+  .h1 {
+      position: relative;
+  }
+  .glitch {
+    font-size: 65px;
+    font-weight: bold;
+    position: absolute;
+    text-shadow: 0.05em 0 0 rgba(255, 255, 255, 0.75),
+      -0.025em -0.05em 0 rgba(19, 15, 146, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    top: -360px;
+    right: -900px;
+    animation: glitch 5000ms infinite;
+  }
+  
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .glitch span:first-child {
+    animation: glitch 6500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-0.025em, -0.0125em);
+    /* color: green; */
+    opacity: 0.8;
+  }
+  
+  .glitch span:last-child {
+    animation: glitch 3750ms infinite;
+    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+    transform: translate(0.0125em, 0.025em);
+    /* color: red; */
+    opacity: 0.8;
+  }
+  
+  /* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 rgba(255, 255, 255, 0.75),
+        -0.05em -0.025em 0 rgba(19, 15, 146, 0.75),
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+ 
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 255, 255, 0.75),
+        0.025em 0.025em 0 rgba(19, 15, 146, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 255, 255, 0.75),
+        0.05em 0 0 rgba(19, 15, 146, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    100% {
+      text-shadow: -0.025em 0 0 rgba(255, 255, 255, 0.75),
+        -0.025em -0.025em 0 rgba(19, 15, 146, 0.75),
+        -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+  }
+/* !! People with photosensitive epilepsy may have seizures triggered by displays that flicker, flash, or blink, this mediaquery prevents just that (in case they have set the preferences or use 3rd party extension etc... */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-delay: -10ms !important;
+      animation-duration: 10ms !important;
+      animation-iteration-count: 1 !important;
+      background-attachment: initial !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0s !important;
+      transition-delay: 0s !important;
+    }
+  }
+  
